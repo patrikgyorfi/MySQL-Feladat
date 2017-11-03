@@ -1,9 +1,9 @@
 <?php
 
 // Adatbázis kapcsolat beállításai.
-define("DBNAME", "bestyellow");
-define("DBUSER", "bestyellow");
-define("DBPASSWORD", "BVxfn7gaLppkcSty");
+define("DBNAME", "sqlprojekt");
+define("DBUSER", "sqlprojekt");
+define("DBPASSWORD", "asd123");
 
 // Routing (útválasztó) beállításai.
 define("PREFIX", "api");
