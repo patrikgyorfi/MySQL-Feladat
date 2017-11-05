@@ -29,41 +29,32 @@
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input id="searchtxt" class="form-control mr-sm-2" type="text" placeholder="Name" aria-label="Search">
-                <select name="kereses" id="kereses" class="selectpicker">
-                    <optgroup label="Mi alapján szeretnél keresni?"></optgroup>
-                    <option value="key">Key</option>
-                    <option value="name">Name</option>
-                    <option value="code">Code</option>
+                <select name="database" id="database" class="selectpicker">
+                    <optgroup label="Which database?"></optgroup>
+                    <option value="customers">Customers</option>
+                    <option value="employees">Employees</option>
+                    <option value="offices">Offices</option>
+                    <option value="orderdetails">Orderdetails</option>
+                    <option value="orders">Orders</option>
+                    <option value="payments">Payments</option>
+                    <option value="productlines">Productlines</option>
+                    <option value="products">Products</option>
                 </select>
-                <button id="searchbtn" class="btn btn-outline-success my-2 my-sm-0" type="button">Search</button>
+                <button id="table1-btn" class="btn btn-outline-success my-2 my-sm-0" type="button">Go</button>
             </form>
         </div>
     </nav>
 
-    <main role="main" class="container">
+    <main role="main">
 
-        <div class="starter-template">
+        <div class="starter-template container">
             <h1>Spanyol Bajnokság</h1>
         </div>
-        <div class="starter-template">
+        <div class="starter-template container">
             <table class="table table-hover" id="data-table">
-                <thead>
-                    <tr>
-                        <th>#</th>
-                        <th>
-                            <button id="sort-btn-key">Key</button>
-                        </th>
-                        <th>
-                            <button id="sort-btn-name">Name</button>
-                        </th>
-                        <th>
-                            <button id="sort-btn">Code</button>
-                        </th>
-                        <th>Link</th>
-                    </tr>
+                <thead id="tablehead">
                 </thead>
-                <tbody></tbody>
+                <tbody id="tablebody"></tbody>
             </table>
         </div>
 
@@ -81,8 +72,7 @@
     </script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="js/index.js"></script>
+    <script src="api/main.js"></script>
 </body>
 
 </html>
